@@ -101,17 +101,20 @@ modulo4-consumer2/
 
 ---
 
+
 ## Imagens Docker
 
-- [Módulo 4](https://hub.docker.com/r/juliosn/modulo1)
-- [Módulo 4.1](https://hub.docker.com/r/juliosn/modulo2)
-- [Módulo 4.2](https://hub.docker.com/r/juliosn/modulo-auth)
+- [Módulo 4](https://hub.docker.com/r/juliosn/modulo4)
+- [Módulo 4.1](https://hub.docker.com/r/juliosn/modulo4-consumer1)
 
 ---
 
 
 ## 📦 Instalação e Configuração do Ambiente
-> Obs.: Tenha as imagens acima baixadas e presentes no seu docker para execução!
+> Obs.: Caso queria executar tudo através do ambiente docker, tenha as imagens acima baixadas e presentes no seu docker para execução!
+
+> No docker-compose.yml há um bloco de código comentado, em que o mesmo espera as imagens no seu docker local. Apenas descomente esse trecho do código e siga as instruções abaixo
+- > **OBS.: Isso não é uma ação obrigatória para validar o funcionamento individual desse módulo. As instruções a seguir contemplam ambos os cenários, execute  conforme achar melhor!**
 
 ### 1️⃣ Clone o projeto na sua máquina e baixe as dependências:
 ```bash
@@ -189,7 +192,7 @@ curl --request POST \
 Ao enviar qualquer uma das mensagens acima, você deverá ver no console da aplicação:
 
 ```
-[Consumer1] Evento Recebido → ......
+[Consumer2] Evento Recebido → ......
 ```
 
 ---
